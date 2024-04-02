@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class App {
+    public static void main(String[] args) throws Exception {
+                // Create a Scanner object for reading input from the console
+        Scanner input = new Scanner(System.in);
+
+        // Prompt the user to enter a temperature in Celsius
+        System.out.print("Enter temperature in Celsius: ");
+        double celsius = input.nextDouble();
+
+        // Convert Celsius to Fahrenheit using the conversion formula
+        double fahrenheit = (9.0 / 5) * celsius + 32;
+
+        // Display the result
+        System.out.println("Temperature in Fahrenheit: " + fahrenheit);
+
+        // Close the Scanner object to prevent resource leak
+        input.close();
+    }
+}
